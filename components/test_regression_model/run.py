@@ -39,7 +39,6 @@ def go(args):
 
     logger.info("Scoring")
     r_squared = sk_pipe.score(X_test, y_test)
-
     mae = mean_absolute_error(y_test, y_pred)
 
     logger.info(f"Score: {r_squared}")
